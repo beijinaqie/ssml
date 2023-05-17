@@ -366,6 +366,7 @@ function handleMouseDown(e: Event) {
 	const list = [...props.ignoreEle, divEditorRef.value];
 
 	for (const value of list) {
+		console.log(value)
 		if (value?.contains(e.target as HTMLElement)) {
 			console.log("不应该清除光标");
 			return;
@@ -412,7 +413,7 @@ function setCursorPosition() {
 }
 
 function handleInput(e: Event) {
-	console.log("input")
+	// console.log("input")
 	const value = (e.target as HTMLDivElement)?.textContent ?? "";
 	inputValue.value = value;
 }
@@ -439,7 +440,7 @@ function handleBlur(e: Event) {
 }
 
 function handleSelectionChange(e: Event) {
-	console.log(e)
+	// console.log(e)
 }
 
 // 可编辑区域点击获取焦点
