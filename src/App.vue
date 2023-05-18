@@ -169,9 +169,6 @@ function selectPause(item: any) {
   ssmlEditorRef.value?.insertHtml(html);
 }
 
-onMounted(() => {
-  console.log(actionRef.value)
-})
 </script>
 
 <style lang="scss">
